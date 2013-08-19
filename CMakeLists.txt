@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( color_tracking )
+find_package( OpenCV REQUIRED )
+add_executable( color_tracking color_tracking.cpp )
+target_link_libraries( color_tracking ${OpenCV_LIBS} )
